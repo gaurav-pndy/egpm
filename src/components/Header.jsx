@@ -16,15 +16,15 @@ const Header = () => {
 
   return (
     <header className="bg-white py-2 md:py-0 shadow-md sticky top-0 z-50">
-      <div className="flex max-w-5xl mx-auto items-center justify-between md:justify-normal gap-18 px-4 md:px-3.5  ">
+      <div className="flex max-w-5xl mx-auto items-center justify-between md:justify-normal gap-8 lg:gap-18 px-4 md:px-3.5  ">
         <div className="flex items-center ">
           <img
             src="https://static.wixstatic.com/media/e6f22e_41bc48dd07df46e6a3f71c6dd4cfd6c3~mv2.png" // Replace with your logo URL
             alt="EGPM Logo"
-            className="w-20 md:w-33 h-20 md:h-33 object-contain"
+            className="w-20 md:w-28 lg:w-33 h-20 md:h-28 lg:h-33 object-contain"
           />
         </div>
-        <nav className="hidden md:flex gap-14 text-[1.14rem] font-[550] text-[rgb(0,56,98)]">
+        <nav className="hidden md:flex gap-6 lg:gap-14 text-[1.14rem] font-[550] text-[rgb(0,56,98)]">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}

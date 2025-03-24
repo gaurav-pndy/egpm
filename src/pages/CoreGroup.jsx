@@ -113,7 +113,7 @@ const CoreGroup = () => {
         <img
           src="https://static.wixstatic.com/media/11062b_f71f178b5f494268bf2f5420c4820ae3~mv2.jpg/v1/fill/w_1899,h_319,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_f71f178b5f494268bf2f5420c4820ae3~mv2.jpg"
           alt="Background"
-          className="w-full object-cover h-[30svh] md:h-[35vh]"
+          className="w-full object-cover h-[30vh] md:h-[35vh]"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center p-4 px-2 text-white text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-3">Core Group</h2>

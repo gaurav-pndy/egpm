@@ -2,6 +2,8 @@ import React from "react";
 import { useForm, useFieldArray, Controller } from "react-hook-form";
 import { Plus, Trash } from "lucide-react";
 import countries from "../utils/countries";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const Resettlement = () => {
   const {
@@ -100,10 +102,20 @@ const Resettlement = () => {
 
           <div className="flex flex-col gap-1">
             <label className="font-[800]">Mobile Number*</label>
-            <input
+            {/* <input
               type="tel"
               {...register("mobile", { required: "Mobile number required" })}
               className="border p-1 md:w-1/2 rounded"
+            /> */}
+            <PhoneInput
+              country={"in"}
+              type="tel"
+              {...register("mobile", { required: "Mobile number required" })}
+              inputClass="border !border-black !text-sm !h-fit !py-1 md:!w-1/2 rounded"
+              buttonClass="!bg-[#d5e6e9]  !border-black !border-r-0"
+              dropdownClass="!bg-white !text-black !shadow-lg"
+              containerClass=""
+              enableSearch
             />
             {errors.mobile && (
               <span className="text-red-600 font-semibold text-xs mt-1">
@@ -114,10 +126,15 @@ const Resettlement = () => {
 
           <div className="flex flex-col gap-1">
             <label className="font-[800]">Alternate Mobile Number</label>
-            <input
+            <PhoneInput
+              country={"in"}
               type="tel"
               {...register("altMobile")}
-              className="border p-1 md:w-1/2 rounded"
+              inputClass="border !border-black !text-sm !h-fit !py-1 md:!w-1/2 rounded"
+              buttonClass="!bg-[#d5e6e9]  !border-black !border-r-0"
+              dropdownClass="!bg-white !text-black !shadow-lg"
+              containerClass=""
+              enableSearch
             />
           </div>
 
@@ -342,14 +359,21 @@ const Resettlement = () => {
                     })}
                     className="border p-1 w-full md:w-1/4 rounded"
                   />
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    {...register(`relatives.${index}.phone`, {
-                      required: "Required",
-                    })}
-                    className="border p-1 w-full md:w-1/4 rounded"
-                  />
+
+                  <div className="w-full md:w-1/4">
+                    <PhoneInput
+                      country={"in"}
+                      type="tel"
+                      {...register(`relatives.${index}.phone`, {
+                        required: "Required",
+                      })}
+                      inputClass="border !border-black !text-sm !h-fit !px-11 !py-1 !w-full rounded"
+                      buttonClass="!bg-[#d5e6e9]  !border-black !border-r-0"
+                      dropdownClass="!bg-white !text-black !shadow-lg"
+                      containerClass=""
+                      enableSearch
+                    />
+                  </div>
                   <input
                     type="email"
                     placeholder="Email"

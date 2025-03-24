@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white py-2 md:py-0 shadow-md sticky top-0 z-50">
+    <header className="bg-white py-2 md:py-0 shadow-md  z-10">
       <div className="flex max-w-5xl mx-auto items-center justify-between md:justify-normal gap-8 lg:gap-18 px-4 md:px-3.5  ">
         <div className="flex items-center ">
           <img
@@ -39,14 +39,14 @@ const Header = () => {
         </nav>
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X size={28} /> : <Menu size={40} />}
+            {menuOpen ? <X size={40} /> : <Menu size={40} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden absolute w-full text-center bg-white shadow-md px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden z-20 absolute w-full h-fit text-center bg-white shadow-lg shadow-black/30 px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}

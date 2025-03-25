@@ -101,13 +101,11 @@ Hon. Director, Digital Affairs, Eurasian Federation of Oncology.
     `,
     location: "New Delhi, India",
   },
-  // Add more members here as needed
 ];
 
 const CoreGroup = () => {
   return (
     <section className="flex flex-col items-center mb-12">
-      {/* Header with background image */}
       <div className="relative w-full">
         <div className="absolute inset-0 bg-[rgb(0,56,98)]/30"></div>
         <img
@@ -124,7 +122,6 @@ const CoreGroup = () => {
         </div>
       </div>
 
-      {/* Team Members */}
       <div className="w-full mt-3 max-w-5xl text-[rgb(0,37,65)] p-4 md:p-6 text-base md:text-[1.05rem] leading-6.5 text-justify md:leading-7.5 font-[550]">
         <h3 className="text-[1.6rem] font-bold mb-16 text-center md:text-left">
           Our Team

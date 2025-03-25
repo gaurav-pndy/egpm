@@ -1,43 +1,6 @@
 import React from "react";
 
 const Resettlement = () => {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   watch,
-  //   control,
-  //   formState: { errors },
-  //   reset,
-  // } = useForm({
-  //   defaultValues: {
-  //     messenger: [],
-  //     relatives: [{ fullName: "", phone: "", email: "", relationship: "" }],
-  //   },
-  // });
-
-  // const { fields, append, remove } = useFieldArray({
-  //   control,
-  //   name: "relatives",
-  // });
-
-  // const messengers = ["WhatsApp", "Telegram", "Viber", "Other"];
-
-  // const onSubmit = (data) => {
-  //   console.log("aaa gya");
-  //   if (
-  //     data.email !== data.confirmEmail ||
-  //     data.altEmail !== data.confirmAltEmail
-  //   ) {
-  //     alert(
-  //       "Primary or Alternate email fields do not match their confirmations."
-  //     );
-  //     return;
-  //   }
-  //   console.log("Submitted data:", data);
-  //   alert("Form submitted successfully!");
-  //   reset();
-  // };
-
   return (
     <section className="flex flex-col items-center mb-12">
       <div className="relative w-full mb-20">

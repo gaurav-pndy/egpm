@@ -3,7 +3,6 @@ import React from "react";
 const About = () => {
   return (
     <section className="flex flex-col items-center mb-12">
-      {/* Header with background image */}
       <div className="relative w-full ">
         <div className="absolute inset-0 bg-[rgb(0,56,98)]/30"></div>
         <img
@@ -12,7 +11,6 @@ const About = () => {
           className="w-full object-cover h-[30vh] md:h-[35vh]"
         />
 
-        {/* Content overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center p-4 px-2 text-white text-center ">
           <h2 className="text-4xl md:text-5xl font-bold mb-3">GRASP Goals</h2>
           <p className="text-2xl md:text-4xl mb-2">for</p>{" "}
@@ -22,7 +20,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Goals content */}
       <div className="w-full  mt-3 max-w-5xl text-[rgb(0,37,65)] p-4 md:p-6 text-base md:text-[1.6rem] leading-7 md:leading-8 font-[500]">
         <h3 className="text-[1.6rem] font-bold mb-8 text-center md:text-left">
           Our Goals

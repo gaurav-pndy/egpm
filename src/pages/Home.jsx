@@ -4,7 +4,6 @@ import { Link } from "react-router";
 const Home = () => {
   return (
     <div className="flex flex-col items-center min-h-screen">
-      {/* Hero section with background image */}
       <div className="relative w-full ">
         <div className="absolute inset-0 bg-slate-700/50"></div>
         <img
@@ -13,7 +12,6 @@ const Home = () => {
           className="w-full object-cover h-[65vh] md:h-[60vh]"
         />
 
-        {/* Content overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center p-4 px-2 text-white text-center bg-black/20">
           <div className="relative flex flex-col gap-2.5 border-4 bg-[rgb(64,64,64)]/50 w-[90%] lg:w-[65%] pt-8 md:pt-10 pb-12 md:pb-14 mb-6 max-w-5xl">
             <h1 className="text-2xl md:text-[2.9rem] font-bold">
@@ -32,7 +30,6 @@ const Home = () => {
               Register before <span className="font-bold">24th March 2022</span>
             </p>
 
-            {/* Action buttons */}
             <div className="md:absolute -bottom-7 md:-bottom-5 md:left-[50%] md:translate-x-[-50%] tracking-widest  flex flex-col md:flex-row gap-4 md:gap-0 mt-4 w-full  md:max-w-3xl px-4 md:px-8 justify-between ">
               <Link to="/resettlement">
                 <button className="bg-[#3d9be9] hover:bg-[#0086eb] text-white px-8 py-2 w-full md:w-72 cursor-pointer transition-all duration-200">
@@ -49,7 +46,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Main content */}
       <div className="w-full mt-6 max-w-5xl text-[rgb(0,37,65)] p-4 md:p-6 text-base md:text-[1.19rem] leading-7 md:leading-8 font-[500]">
         <p className="mb-6 md:mb-8 text-justify">
           In these difficult situations, when the whole world is keenly watching
@@ -116,7 +112,6 @@ const Home = () => {
           on behalf of EGPM Team
         </p>
 
-        {/* Founder section */}
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 my-10 md:my-16 justify-center">
           <img
             src="https://static.wixstatic.com/media/e6f22e_f34005accbdf4e9bbf54dc24d9899b94~mv2.jpg/v1/crop/x_0,y_122,w_2953,h_2950/fill/w_175,h_175,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/SUBRAMANIAN_Somasundaram_JPG.jpg"
